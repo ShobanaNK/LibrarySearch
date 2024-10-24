@@ -65,7 +65,7 @@ def query_collection(query):
     collection = chroma_client.get_or_create_collection(name=COLLECTION_NAME)
     # Query the ChromaDB collection using `collection.query()
     results = collection.query(
-        query_texts=query,
+        query_texts=query, # Here we are passing the texts for search. Probably makes sense to pass the query_embeddings https://docs.trychroma.com/reference/py-collection#query
         n_results=3,
         include = ['metadatas', 'distances']
     )
