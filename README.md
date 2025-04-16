@@ -1,5 +1,8 @@
 # LibrarySearch
-Simple Semantic Search Application to search books by context.
+Simple Semantic Search Application to search books by context or topic.
+
+![Component Design](design.png)
+![Search Assistant screenshot](Screenshot.png)
 
 # Initial Setup
 
